@@ -77,4 +77,45 @@ y_pred = model.predict(X_test)
 print("Predictions:")
 print(y_pred[:10])
 
+# Actual vs Predicted
+results = pd.DataFrame({
+    "Actual": y_test.values,
+    "Predicted": y_pred
+})
 
+print(results.head(10))
+
+# Residual Error
+residuals = y_test.values - y_pred
+
+print("Residuals:")
+print(residuals[:10])
+
+# Metrics
+mse = mean_squared_error(y_test, y_pred)
+mae = mean_absolute_error(y_test, y_pred)
+rmse = np.sqrt(mse)
+r2 = r2_score(y_test, y_pred)
+
+print("MSE:", mse)
+print("MAE:", mae)
+print("RMSE:", rmse)
+print("R²:", r2)
+
+# Actual vs Predicted Plot
+plt.figure(figsize=(8, 6))
+plt.scatter(y_test, y_pred)
+
+minimum = min(y_test.min(), y_pred.min())
+maximum = max(y_test.max(), y_pred.max())
+
+plt.plot(
+    [minimum, maximum],
+    [minimum, maximum],
+    linestyle="--"
+)
+
+plt.xlabel("Actual")
+plt.ylabel("Predicted")
+plt.title("Actual vs Predicted")
+plt.show()
