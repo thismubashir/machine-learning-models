@@ -20,4 +20,31 @@ print(df.describe())
 print(df.isnull().sum())
 print("Duplicates:", df.duplicated().sum())
 
+# Data Cleaning
+df = df.drop_duplicates()
+df = df.dropna()
+
+print("Shape after cleaning:", df.shape)
+
+# Correlation
+correlation = df.corr(numeric_only=True)
+print(correlation)
+
+plt.figure(figsize=(7, 5))
+plt.imshow(correlation, cmap="viridis", vmin=-1, vmax=1)
+plt.colorbar(label="Correlation")
+plt.xticks(range(len(correlation.columns)), correlation.columns, rotation=45)
+plt.yticks(range(len(correlation.columns)), correlation.columns)
+plt.title("Correlation Matrix")
+plt.show()
+
+# X and y
+X = df[["countyfips"]]
+y = df["avghouseholdsize"]
+
+print("X:")
+print(X.head())
+
+print("y:")
+print(y.head())
 
