@@ -119,3 +119,23 @@ plt.xlabel("Actual")
 plt.ylabel("Predicted")
 plt.title("Actual vs Predicted")
 plt.show()
+
+# Residual Plot
+plt.figure(figsize=(8, 6))
+plt.scatter(y_pred, residuals)
+plt.axhline(y=0, linestyle="--")
+
+plt.xlabel("Predicted")
+plt.ylabel("Residual")
+plt.title("Residual Plot")
+plt.show()
+
+# Residual Distribution
+plt.figure(figsize=(8, 6))
+plt.hist(residuals, bins=30, edgecolor="black")
+plt.axvline(x=0, linestyle="--")
+
+plt.xlabel("Residual")
+plt.ylabel("Frequency")
+plt.title("Residual Distribution")
+plt.show()
