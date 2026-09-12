@@ -61,3 +61,34 @@ y_prob = model.predict_proba(X_test)[:, 1]
 accuracy = accuracy_score(y_test, y_pred)
 auc = roc_auc_score(y_test, y_prob)
 
+print("\nAccuracy:", round(accuracy, 4))
+print("ROC-AUC:", round(auc, 4))
+
+print("\nConfusion Matrix:")
+cm = confusion_matrix(y_test, y_pred)
+print(cm)
+
+print("\nClassification Report:")
+print(classification_report(y_test, y_pred))
+
+fig, ax = plt.subplots(figsize=(6, 5))
+
+ax.imshow(cm)
+
+ax.set_title("Confusion Matrix")
+ax.set_xlabel("Predicted")
+ax.set_ylabel("Actual")
+
+ax.set_xticks([0, 1])
+ax.set_yticks([0, 1])
+
+for i in range(2):
+    for j in range(2):
+        ax.text(j, i, cm[i, j], ha="center", va="center")
+
+plt.show()
+
+RocCurveDisplay.from_predictions(y_test, y_prob)
+
+plt.title("ROC Curve - Logistic Regression")
+plt.show()
