@@ -18,3 +18,15 @@ df = pd.read_csv("KNN/diabetes.csv")
 print(df.head())
 print(df.shape)
 print(df.isnull().sum())
+zero_columns = [
+    "Glucose",
+    "BloodPressure",
+    "SkinThickness",
+    "Insulin",
+    "BMI"
+]
+
+df[zero_columns] = df[zero_columns].replace(0, np.nan)
+
+X = df.drop("Outcome", axis=1)
+y = df["Outcome"]
