@@ -54,3 +54,25 @@ best_k = k_values[np.argmax(accuracies)]
 
 print("Best K:", best_k)
 print("Best Accuracy:", max(accuracies))
+model = KNeighborsClassifier(n_neighbors=best_k, weights="distance")
+
+model.fit(X_train, y_train)
+
+y_pred = model.predict(X_test)
+y_prob = model.predict_proba(X_test)[:, 1]
+
+print("\nAccuracy:", accuracy_score(y_test, y_pred))
+
+print("\nConfusion Matrix:")
+print(confusion_matrix(y_test, y_pred))
+
+print("\nClassification Report:")
+print(classification_report(y_test, y_pred))
+
+print("\nROC-AUC:", roc_auc_score(y_test, y_prob))
+
+cv_scores = cross_val_score(
+    model, X_train, y_train, cv=5, scoring="accuracy"
+)
+
+print("\nMean CV Accuracy:", cv_scores.mean())
