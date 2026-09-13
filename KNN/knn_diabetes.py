@@ -13,3 +13,8 @@ from sklearn.metrics import (
     classification_report,
     roc_auc_score
 )
+df = pd.read_csv("KNN/diabetes.csv")
+
+print(df.head())
+print(df.shape)
+print(df.isnull().sum())
