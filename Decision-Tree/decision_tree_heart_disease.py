@@ -18,3 +18,12 @@ print(df.head())
 print("\nShape:", df.shape)
 
 print("\nMissing Values:\n", df.isnull().sum())
+df.drop_duplicates(inplace=True)
+
+df["target"] = (df["num"] > 0).astype(int)
+
+df.drop(columns=["num", "id", "dataset"], inplace=True)
+
+print("\nTarget Distribution:")
+
+print(df["target"].value_counts())
