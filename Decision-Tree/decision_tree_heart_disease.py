@@ -27,3 +27,31 @@ df.drop(columns=["num", "id", "dataset"], inplace=True)
 print("\nTarget Distribution:")
 
 print(df["target"].value_counts())
+plt.figure(figsize=(6, 4))
+
+sns.countplot(x="target", data=df)
+
+plt.title("Heart Disease Distribution")
+
+plt.xlabel("Target")
+
+plt.ylabel("Count")
+
+plt.show()
+
+
+categorical_columns = df.select_dtypes(include="object").columns
+
+df = pd.get_dummies(
+
+    df,
+
+    columns=categorical_columns,
+
+    drop_first=True
+
+)
+
+X = df.drop("target", axis=1)
+
+y = df["target"]
