@@ -95,3 +95,11 @@ prediction = model.predict(X_test)
 accuracy = accuracy_score(y_test, prediction)
 
 print("\nDecision Tree Accuracy:", accuracy)
+cv_scores = cross_val_score(model, X, y, cv=5, scoring="accuracy")
+
+print("\nCross Validation Scores:")
+print(cv_scores)
+print("Average CV Accuracy:", cv_scores.mean())
+
+print("\nClassification Report:")
+print(classification_report(y_test, prediction, target_names=["No Disease", "Disease"]))
