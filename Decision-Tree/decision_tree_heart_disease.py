@@ -103,3 +103,40 @@ print("Average CV Accuracy:", cv_scores.mean())
 
 print("\nClassification Report:")
 print(classification_report(y_test, prediction, target_names=["No Disease", "Disease"]))
+cm = confusion_matrix(y_test, prediction)
+
+plt.figure(figsize=(6, 5))
+
+sns.heatmap(cm, annot=True, fmt="d", cmap="Blues", xticklabels=["No Disease", "Disease"], yticklabels=["No Disease", "Disease"])
+
+plt.title("Confusion Matrix")
+plt.xlabel("Predicted")
+plt.ylabel("Actual")
+
+plt.show()
+
+
+importance = pd.DataFrame({"Feature": X.columns, "Importance": model.feature_importances_})
+
+importance = importance.sort_values(by="Importance", ascending=False)
+
+print("\nFeature Importance:")
+print(importance.head(10))
+
+
+plt.figure(figsize=(8, 6))
+
+sns.barplot(data=importance.head(10), x="Importance", y="Feature")
+
+plt.title("Top 10 Important Features")
+
+plt.show()
+
+
+plt.figure(figsize=(20, 10))
+
+plot_tree(model, feature_names=X.columns, class_names=["No Disease", "Disease"], filled=True, max_depth=3)
+
+plt.title("Decision Tree")
+
+plt.show()
