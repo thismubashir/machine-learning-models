@@ -73,3 +73,25 @@ X_train, X_test, y_train, y_test = train_test_split(
 X_train = X_train.fillna(X_train.median())
 
 X_test = X_test.fillna(X_train.median())
+model = DecisionTreeClassifier(
+
+    max_depth=6,
+
+    min_samples_split=5,
+
+    min_samples_leaf=4,
+
+    class_weight="balanced",
+
+    random_state=42
+
+)
+
+model.fit(X_train, y_train)
+
+
+prediction = model.predict(X_test)
+
+accuracy = accuracy_score(y_test, prediction)
+
+print("\nDecision Tree Accuracy:", accuracy)
