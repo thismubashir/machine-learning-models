@@ -17,3 +17,18 @@ from sklearn.metrics import (
     classification_report
 
 )
+df = pd.read_csv("/content/blood_cancer.csv")
+
+print(df.head())
+
+print("\nShape:")
+
+print(df.shape)
+
+print("\nMissing Values:")
+
+print(df.isnull().sum())
+
+print("\nDiagnosis:")
+
+print(df["diagnosis"].value_counts())
