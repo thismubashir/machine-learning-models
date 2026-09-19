@@ -54,3 +54,34 @@ X_train, X_test, y_train, y_test = train_test_split(
     stratify=y
 
 )
+rf = RandomForestClassifier(
+
+    n_estimators=100,
+
+    max_depth=5,
+
+    max_features="sqrt",
+
+    oob_score=True,
+
+    random_state=42
+
+)
+
+
+
+rf.fit(X_train, y_train)
+
+
+
+y_pred = rf.predict(X_test)
+
+
+
+accuracy = accuracy_score(y_test, y_pred)
+
+print("\nAccuracy:", accuracy)
+
+
+
+print("OOB Score:", rf.oob_score_)
