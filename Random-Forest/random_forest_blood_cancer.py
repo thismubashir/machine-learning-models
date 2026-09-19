@@ -32,3 +32,11 @@ print(df.isnull().sum())
 print("\nDiagnosis:")
 
 print(df["diagnosis"].value_counts())
+le = LabelEncoder()
+
+df["gender"] = le.fit_transform(df["gender"])
+
+
+X = df.drop("diagnosis", axis=1)
+
+y = df["diagnosis"]
