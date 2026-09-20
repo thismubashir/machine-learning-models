@@ -85,3 +85,75 @@ print("\nAccuracy:", accuracy)
 
 
 print("OOB Score:", rf.oob_score_)
+cm = confusion_matrix(y_test, y_pred)
+
+print("\nConfusion Matrix:")
+
+print(cm)
+
+plt.figure(figsize=(6, 5))
+
+plt.imshow(cm)
+
+plt.xlabel("Predicted")
+
+plt.ylabel("Actual")
+
+plt.title("Confusion Matrix")
+
+plt.colorbar()
+
+plt.show()
+
+
+
+print("\nClassification Report:")
+
+print(classification_report(y_test, y_pred))
+
+
+
+
+importance = pd.DataFrame({
+
+    "Feature": X.columns,
+
+    "Importance": rf.feature_importances_
+
+})
+
+importance = importance.sort_values(
+
+    by="Importance",
+
+    ascending=False
+
+)
+
+print("\nFeature Importance:")
+
+print(importance)
+
+
+
+top10 = importance.head(10)
+
+plt.figure(figsize=(10, 6))
+
+plt.barh(
+
+    top10["Feature"],
+
+    top10["Importance"]
+
+)
+
+plt.xlabel("Importance")
+
+plt.ylabel("Feature")
+
+plt.title("Top 10 Important Features")
+
+plt.gca().invert_yaxis()
+
+plt.show()
