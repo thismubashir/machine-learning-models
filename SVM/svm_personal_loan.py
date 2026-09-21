@@ -151,3 +151,23 @@ sns.countplot(
 plt.title("Family Size vs Personal Loan")
 
 plt.show()
+df = df.drop(columns=["ID", "ZIP Code"])
+
+X = df.drop(columns=["Personal Loan"])
+
+y = df["Personal Loan"]
+
+
+X_train, X_test, y_train, y_test = train_test_split(
+
+    X,
+
+    y,
+
+    test_size=0.20,
+
+    random_state=42,
+
+    stratify=y
+
+)
