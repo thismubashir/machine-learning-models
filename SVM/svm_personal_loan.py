@@ -25,3 +25,22 @@ from sklearn.metrics import (
     classification_report
 
 )
+df = pd.read_csv("/content/UniversalBank.csv")
+
+
+print(df.head())
+
+print(df.shape)
+
+print(df.info())
+
+print(df.describe())
+
+print(df.isnull().sum())
+
+print(df.duplicated().sum())
+
+
+print(df["Personal Loan"].value_counts())
+
+print(df["Personal Loan"].value_counts(normalize=True) * 100)
