@@ -44,3 +44,110 @@ print(df.duplicated().sum())
 print(df["Personal Loan"].value_counts())
 
 print(df["Personal Loan"].value_counts(normalize=True) * 100)
+sns.countplot(x="Personal Loan", data=df)
+
+plt.title("Personal Loan Distribution")
+
+plt.xlabel("Personal Loan")
+
+plt.ylabel("Number of Customers")
+
+plt.show()
+
+
+plt.figure(figsize=(12, 8))
+
+sns.heatmap(
+
+    df.corr(numeric_only=True),
+
+    annot=True,
+
+    cmap="coolwarm"
+
+)
+
+plt.title("Correlation Heatmap")
+
+plt.show()
+
+
+plt.figure(figsize=(7, 5))
+
+sns.boxplot(
+
+    x="Personal Loan",
+
+    y="Income",
+
+    data=df
+
+)
+
+plt.title("Income vs Personal Loan")
+
+plt.show()
+
+
+plt.figure(figsize=(7, 5))
+
+sns.boxplot(
+
+    x="Personal Loan",
+
+    y="Age",
+
+    data=df
+
+)
+
+plt.title("Age vs Personal Loan")
+
+plt.show()
+
+
+plt.figure(figsize=(7, 5))
+
+sns.boxplot(
+
+    x="Personal Loan",
+
+    y="CCAvg",
+
+    data=df
+
+)
+
+plt.title("Credit Card Average Spending vs Personal Loan")
+
+plt.show()
+
+
+sns.countplot(
+
+    x="Education",
+
+    hue="Personal Loan",
+
+    data=df
+
+)
+
+plt.title("Education vs Personal Loan")
+
+plt.show()
+
+
+sns.countplot(
+
+    x="Family",
+
+    hue="Personal Loan",
+
+    data=df
+
+)
+
+plt.title("Family Size vs Personal Loan")
+
+plt.show()
