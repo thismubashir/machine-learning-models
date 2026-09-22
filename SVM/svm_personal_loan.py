@@ -192,3 +192,56 @@ model.fit(X_train_scaled, y_train)
 
 
 y_pred = model.predict(X_test_scaled)
+accuracy = accuracy_score(y_test, y_pred)
+
+precision = precision_score(y_test, y_pred)
+
+recall = recall_score(y_test, y_pred)
+
+f1 = f1_score(y_test, y_pred)
+
+
+print("\nModel Results")
+
+print("Accuracy :", accuracy)
+
+print("Precision:", precision)
+
+print("Recall   :", recall)
+
+print("F1 Score :", f1)
+
+
+cm = confusion_matrix(y_test, y_pred)
+
+print("\nConfusion Matrix:")
+
+print(cm)
+
+
+plt.figure(figsize=(6, 5))
+
+sns.heatmap(
+
+    cm,
+
+    annot=True,
+
+    fmt="d",
+
+    cmap="Blues"
+
+)
+
+plt.title("SVM Confusion Matrix")
+
+plt.xlabel("Predicted")
+
+plt.ylabel("Actual")
+
+plt.show()
+
+
+print("\nClassification Report:")
+
+print(classification_report(y_test, y_pred))
