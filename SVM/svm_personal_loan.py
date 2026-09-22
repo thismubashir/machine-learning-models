@@ -176,3 +176,19 @@ scaler = StandardScaler()
 X_train_scaled = scaler.fit_transform(X_train)
 
 X_test_scaled = scaler.transform(X_test)
+
+model = SVC(
+
+    kernel="rbf",
+
+    C=1,
+
+    gamma="scale"
+
+)
+
+
+model.fit(X_train_scaled, y_train)
+
+
+y_pred = model.predict(X_test_scaled)
