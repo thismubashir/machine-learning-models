@@ -188,3 +188,49 @@ plt.xlabel("Features")
 plt.ylabel("Importance")
 
 plt.show()
+# 21. Hyperparameter Search Space
+
+param_grid = {
+    "n_estimators": [100, 200, 300, 400, 500],
+
+    "learning_rate": [0.01, 0.03, 0.05, 0.1],
+
+    "max_depth": [2, 3, 4, 5, 6],
+
+    "min_child_weight": [1, 3, 5, 7],
+
+    "subsample": [0.7, 0.8, 0.9, 1.0],
+
+    "colsample_bytree": [0.7, 0.8, 0.9, 1.0]
+}
+
+
+# 22. Randomized Search
+
+random_search = RandomizedSearchCV(
+    estimator=XGBRegressor(
+        random_state=42
+    ),
+
+    param_distributions=param_grid,
+
+    n_iter=30,
+
+    cv=3,
+
+    scoring="neg_mean_absolute_error",
+
+    random_state=42,
+
+    n_jobs=-1
+)
+
+
+random_search.fit(
+    X_train,
+    y_train
+)
+print(
+    random_search.best_params_
+)
+best_model = random_search.best_estimator_
