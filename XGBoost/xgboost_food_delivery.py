@@ -234,3 +234,77 @@ print(
     random_search.best_params_
 )
 best_model = random_search.best_estimator_
+# 26. Tuned Train Prediction
+
+y_train_pred_tuned = best_model.predict(
+    X_train
+)
+
+
+# 27. Tuned Test Prediction
+
+y_test_pred_tuned = best_model.predict(
+    X_test
+)
+
+
+# 28. Tuned Train Metrics
+
+train_mae_tuned = mean_absolute_error(
+    y_train,
+    y_train_pred_tuned
+)
+
+train_r2_tuned = r2_score(
+    y_train,
+    y_train_pred_tuned
+)
+
+
+# 29. Tuned Test Metrics
+
+test_mae_tuned = mean_absolute_error(
+    y_test,
+    y_test_pred_tuned
+)
+
+test_r2_tuned = r2_score(
+    y_test,
+    y_test_pred_tuned
+)
+
+
+# 30. Tuned Model Results
+
+
+print("Train MAE:", train_mae_tuned)
+
+print("Test MAE:", test_mae_tuned)
+
+print("Train R2:", train_r2_tuned)
+
+print("Test R2:", test_r2_tuned)
+
+
+# 31. Generalization Gap
+
+mae_gap = test_mae_tuned - train_mae_tuned
+
+r2_gap = train_r2_tuned - test_r2_tuned
+
+
+print("MAE Gap:", mae_gap)
+
+print("R2 Gap:", r2_gap)
+
+
+# 32. Generalization Interpretation
+
+if r2_gap < 0.05:
+    print("Model is generalizing well.")
+
+elif r2_gap < 0.10:
+    print("Model has a moderate generalization gap.")
+
+else:
+    print("Model may be overfitting.")
