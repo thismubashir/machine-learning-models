@@ -77,3 +77,22 @@ plt.xlabel("Distance (km)")
 plt.ylabel("Delivery Time (minutes)")
 
 plt.show()
+
+X = df.drop(
+    target,
+    axis=1
+)
+
+y = df[target]
+
+X = pd.get_dummies(X)
+
+
+# 11. Train/Test Split
+
+X_train, X_test, y_train, y_test = train_test_split(
+    X,
+    y,
+    test_size=0.2,
+    random_state=42
+)
