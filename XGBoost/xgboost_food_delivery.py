@@ -46,8 +46,6 @@ plt.ylabel("Number of Deliveries")
 plt.show()
 
 
-# 7. Traffic vs Delivery Time
-
 plt.figure(figsize=(8, 5))
 
 sns.boxplot(
@@ -96,3 +94,97 @@ X_train, X_test, y_train, y_test = train_test_split(
     test_size=0.2,
     random_state=42
 )
+# 12. Original XGBoost Model
+
+model = XGBRegressor(
+    n_estimators=100,
+    learning_rate=0.1,
+    max_depth=3,
+    random_state=42
+)
+
+
+# 13. Train Original Model
+
+model.fit(
+    X_train,
+    y_train
+)
+
+
+# 14. Original Train Prediction
+
+y_train_pred = model.predict(
+    X_train
+)
+
+
+# 15. Original Test Prediction
+
+y_test_pred = model.predict(
+    X_test
+)
+
+
+# 16. Original Train Metrics
+
+train_mae = mean_absolute_error(
+    y_train,
+    y_train_pred
+)
+
+train_r2 = r2_score(
+    y_train,
+    y_train_pred
+)
+
+
+# 17. Original Test Metrics
+
+test_mae = mean_absolute_error(
+    y_test,
+    y_test_pred
+)
+
+test_r2 = r2_score(
+    y_test,
+    y_test_pred
+)
+
+
+# 18. Original Model Results
+
+print("Train MAE:", train_mae)
+print("Test MAE:", test_mae)
+
+print("Train R2:", train_r2)
+print("Test R2:", test_r2)
+
+
+# 19. Feature Importance
+
+importance = pd.Series(
+    model.feature_importances_,
+    index=X.columns
+)
+
+importance = importance.sort_values(
+    ascending=False
+)
+
+print("\nTop 10 Features:")
+print(importance.head(10))
+
+
+# 20. Feature Importance Plot
+
+importance.head(10).plot(
+    kind="bar",
+    figsize=(10, 5)
+)
+
+plt.title("Top 10 Important Features")
+plt.xlabel("Features")
+plt.ylabel("Importance")
+
+plt.show()
