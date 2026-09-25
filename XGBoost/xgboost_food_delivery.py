@@ -308,3 +308,75 @@ elif r2_gap < 0.10:
 
 else:
     print("Model may be overfitting.")
+# 33. Actual vs Predicted
+
+plt.figure(figsize=(8, 5))
+
+plt.scatter(
+    y_test,
+    y_test_pred_tuned
+)
+
+plt.xlabel("Actual Delivery Time")
+plt.ylabel("Predicted Delivery Time")
+
+plt.title("Tuned Model: Actual vs Predicted")
+
+plt.show()
+
+
+# 34. Tuned Feature Importance
+
+tuned_importance = pd.Series(
+    best_model.feature_importances_,
+    index=X.columns
+)
+
+tuned_importance = tuned_importance.sort_values(
+    ascending=False
+)
+
+print("\nTop 10 Features - Tuned Model:")
+
+print(
+    tuned_importance.head(10)
+)
+
+
+# 35. Tuned Feature Importance Plot
+
+tuned_importance.head(10).plot(
+    kind="bar",
+    figsize=(10, 5)
+)
+
+plt.title(
+    "Top 10 Important Features - Tuned Model"
+)
+
+plt.xlabel("Features")
+plt.ylabel("Importance")
+
+plt.show()
+
+
+# 36. Final Comparison
+
+print("\nOriginal Model:")
+
+print("Train MAE:", train_mae)
+print("Test MAE:", test_mae)
+print("Train R2:", train_r2)
+print("Test R2:", test_r2)
+
+print("\nTuned Model:")
+
+print("Train MAE:", train_mae_tuned)
+print("Test MAE:", test_mae_tuned)
+print("Train R2:", train_r2_tuned)
+print("Test R2:", test_r2_tuned)
+
+print("\nGeneralization:")
+
+print("MAE Gap:", mae_gap)
+print("R2 Gap:", r2_gap)
