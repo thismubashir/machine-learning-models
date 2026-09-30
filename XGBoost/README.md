@@ -344,3 +344,145 @@ The model's feature-importance analysis shows that **delivery distance** is the 
 This is consistent with the observed relationship between distance and delivery time: as delivery distance increases, delivery time generally increases.
 
 > Feature importance indicates how much a feature contributes to the trained model's predictions. It should not automatically be interpreted as causal evidence.
+---
+
+## Exploratory Data Analysis
+
+The project includes several visual analyses to understand the dataset and the relationships between different features.
+
+### 1. Delivery Time Distribution
+
+The histogram shows the distribution of delivery times. The majority of observations are concentrated roughly between **30–80 minutes**, with a smaller number of longer deliveries extending beyond 100 minutes. This helps identify the central range and long-tail behavior of delivery times.
+
+### 2. Traffic Level vs Delivery Time
+
+The box plot compares delivery times across Low, Medium, and High traffic levels. The visualization helps examine differences in the distribution and spread of delivery times under different traffic conditions.
+
+### 3. Distance vs Delivery Time
+
+The scatter plot shows a positive relationship between distance and delivery time. As delivery distance increases, delivery time generally increases as well, although other operational factors create variation around the overall relationship.
+
+### 4. Actual vs Predicted Delivery Time
+
+The actual-vs-predicted plot provides a visual check of model performance. A strong regression model generally produces points close to the conceptual diagonal, where predicted values are close to actual values. The plot shows that the model captures the overall relationship between actual and predicted delivery time, while some observations have larger prediction errors.
+
+---
+
+## Project Structure
+
+The XGBoost project is organized as follows:
+
+machine-learning-models/
+│
+├── XGBoost/
+│   ├── Food_Delivery_Times.csv
+│   ├── Food_Delivery_Times.ipynb
+│   ├── xgboost_food_delivery.py
+│   └── README.md
+│
+└── ...
+
+---
+
+## Installation
+
+### 1. Clone the Repository
+
+    git clone https://github.com/thismubashir/machine-learning-models.git
+    cd machine-learning-models
+
+### 2. Create a Virtual Environment
+
+For macOS / Linux:
+
+    python3 -m venv venv
+    source venv/bin/activate
+
+For Windows:
+
+    python -m venv venv
+    venv\Scripts\activate
+
+### 3. Install Dependencies
+
+    pip install pandas numpy matplotlib seaborn scikit-learn xgboost
+
+---
+
+## Running the Project
+
+From the project root:
+
+    python XGBoost/xgboost_food_delivery.py
+
+The script performs the complete workflow, including:
+
+1. Loading the dataset
+2. Inspecting the data
+3. Detecting missing values
+4. Cleaning missing values
+5. Encoding categorical variables
+6. Splitting the dataset
+7. Training the XGBoost model
+8. Generating predictions
+9. Calculating MAE and R²
+10. Displaying feature importance
+11. Generating evaluation plots
+
+---
+
+## Example Output
+
+The model produced the following results:
+
+    Dataset Shape:
+    (1000, 9)
+
+    Missing Values After Cleaning:
+    0
+
+    Train MAE:
+    5.0943
+
+    Test MAE:
+    6.5644
+
+    Train R2:
+    0.8760
+
+    Test R2:
+    0.7912
+
+Feature importance begins with:
+
+    Distance_km               0.391478
+    Preparation_Time_min      0.099814
+    Traffic_Level_High        0.080994
+    Weather_Clear             0.079760
+    Weather_Foggy             0.061489
+
+---
+
+## Evaluation Strategy
+
+The dataset is divided into training and testing subsets.
+
+### Training Set
+
+The training set is used to learn the relationship between input features and delivery time.
+
+### Test Set
+
+The test set is used to evaluate how well the trained model performs on previously unseen observations.
+
+The difference between training and test performance is important for understanding model generalization.
+
+The results were:
+
+    Train MAE ≈ 5.09
+    Test MAE  ≈ 6.56
+
+    Train R² ≈ 0.876
+    Test R²  ≈ 0.791
+
+The lower test performance compared with training performance indicates a generalization gap, which should be monitored when improving the model.
