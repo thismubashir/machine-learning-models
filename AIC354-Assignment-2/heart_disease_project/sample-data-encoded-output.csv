@@ -1,0 +1,304 @@
+Sex,ChestPain,RestECG,ExerciseAngina,HeartDisease
+Male,Typical Angina,LV Hypertrophy,No,0
+Male,Asymptomatic,LV Hypertrophy,Yes,1
+Male,Asymptomatic,LV Hypertrophy,Yes,1
+Male,Non-Anginal Pain,Normal,No,0
+Female,Atypical Angina,LV Hypertrophy,No,0
+Male,Atypical Angina,Normal,No,0
+Female,Asymptomatic,LV Hypertrophy,No,1
+Female,Asymptomatic,Normal,Yes,0
+Male,Asymptomatic,LV Hypertrophy,No,1
+Male,Asymptomatic,LV Hypertrophy,Yes,1
+Male,Asymptomatic,Normal,No,0
+Female,Atypical Angina,LV Hypertrophy,No,0
+Male,Non-Anginal Pain,LV Hypertrophy,Yes,1
+Male,Atypical Angina,Normal,No,0
+Male,Non-Anginal Pain,Normal,No,0
+Male,Non-Anginal Pain,Normal,No,0
+Male,Atypical Angina,Normal,No,1
+Male,Asymptomatic,Normal,No,0
+Female,Non-Anginal Pain,Normal,No,0
+Male,Atypical Angina,Normal,No,0
+Male,Typical Angina,LV Hypertrophy,Yes,0
+Female,Typical Angina,LV Hypertrophy,No,0
+Male,Atypical Angina,LV Hypertrophy,No,1
+Male,Non-Anginal Pain,LV Hypertrophy,No,1
+Male,Asymptomatic,LV Hypertrophy,Yes,1
+Female,Non-Anginal Pain,Normal,No,0
+Female,Non-Anginal Pain,Normal,No,0
+Female,Typical Angina,Normal,No,0
+Male,Asymptomatic,Normal,No,0
+Male,Asymptomatic,LV Hypertrophy,Yes,1
+Female,Typical Angina,Normal,No,0
+Male,Asymptomatic,Normal,Yes,1
+Male,Non-Anginal Pain,Normal,No,1
+Male,Asymptomatic,Normal,No,0
+Male,Non-Anginal Pain,Normal,Yes,0
+Male,Asymptomatic,Normal,No,0
+Male,Asymptomatic,LV Hypertrophy,Yes,1
+Male,Asymptomatic,LV Hypertrophy,Yes,1
+Male,Asymptomatic,Normal,Yes,1
+Male,Non-Anginal Pain,Normal,Yes,0
+Female,Asymptomatic,LV Hypertrophy,No,1
+Male,Typical Angina,Normal,Yes,0
+Female,Atypical Angina,Normal,No,0
+Male,Non-Anginal Pain,Normal,No,0
+Female,Asymptomatic,LV Hypertrophy,No,1
+Male,Non-Anginal Pain,LV Hypertrophy,No,1
+Male,Non-Anginal Pain,Normal,No,0
+Male,Asymptomatic,LV Hypertrophy,No,1
+Female,Non-Anginal Pain,LV Hypertrophy,No,0
+Male,Non-Anginal Pain,LV Hypertrophy,No,0
+Female,Atypical Angina,Normal,No,0
+Male,Asymptomatic,Normal,No,0
+Male,Asymptomatic,LV Hypertrophy,No,1
+Male,Atypical Angina,LV Hypertrophy,No,0
+Male,Asymptomatic,Normal,Yes,1
+Male,Asymptomatic,LV Hypertrophy,Yes,1
+Male,Non-Anginal Pain,Normal,No,1
+Male,Asymptomatic,LV Hypertrophy,No,1
+Male,Non-Anginal Pain,LV Hypertrophy,No,0
+Male,Typical Angina,LV Hypertrophy,Yes,0
+Female,Asymptomatic,Normal,Yes,1
+Female,Non-Anginal Pain,LV Hypertrophy,Yes,0
+Male,Asymptomatic,LV Hypertrophy,Yes,1
+Female,Non-Anginal Pain,Normal,No,0
+Male,Asymptomatic,Normal,No,1
+Male,Asymptomatic,LV Hypertrophy,Yes,1
+Male,Non-Anginal Pain,LV Hypertrophy,No,1
+Male,Non-Anginal Pain,LV Hypertrophy,No,0
+Male,Asymptomatic,LV Hypertrophy,Yes,1
+Male,Non-Anginal Pain,Normal,No,1
+Female,Non-Anginal Pain,Normal,No,0
+Male,Asymptomatic,Normal,No,1
+Male,Asymptomatic,Normal,Yes,1
+Male,Asymptomatic,LV Hypertrophy,No,1
+Male,Asymptomatic,LV Hypertrophy,No,1
+Female,Non-Anginal Pain,LV Hypertrophy,No,0
+Male,Asymptomatic,LV Hypertrophy,Yes,1
+Female,Non-Anginal Pain,LV Hypertrophy,No,0
+Male,Atypical Angina,LV Hypertrophy,No,0
+Male,Asymptomatic,LV Hypertrophy,Yes,1
+Male,Asymptomatic,LV Hypertrophy,Yes,0
+Female,Asymptomatic,LV Hypertrophy,No,0
+Male,Non-Anginal Pain,LV Hypertrophy,No,0
+Male,Non-Anginal Pain,LV Hypertrophy,Yes,1
+Male,Atypical Angina,Normal,No,0
+Male,Non-Anginal Pain,LV Hypertrophy,No,0
+Male,Non-Anginal Pain,LV Hypertrophy,No,0
+Female,Non-Anginal Pain,LV Hypertrophy,No,0
+Female,Asymptomatic,LV Hypertrophy,No,0
+Female,Non-Anginal Pain,LV Hypertrophy,No,0
+Male,Asymptomatic,LV Hypertrophy,No,0
+Female,Asymptomatic,LV Hypertrophy,No,1
+Male,Non-Anginal Pain,Normal,No,0
+Female,Non-Anginal Pain,Normal,No,0
+Female,Non-Anginal Pain,LV Hypertrophy,No,0
+Male,Asymptomatic,Normal,Yes,1
+Male,Asymptomatic,LV Hypertrophy,Yes,1
+Female,Asymptomatic,LV Hypertrophy,No,1
+Male,Atypical Angina,Normal,No,0
+Male,Asymptomatic,LV Hypertrophy,No,0
+Male,Asymptomatic,LV Hypertrophy,No,0
+Male,Typical Angina,LV Hypertrophy,No,0
+Female,Asymptomatic,LV Hypertrophy,No,0
+Female,Non-Anginal Pain,LV Hypertrophy,No,0
+Male,Non-Anginal Pain,Normal,No,1
+Male,Atypical Angina,Normal,No,0
+Male,Asymptomatic,Normal,Yes,1
+Male,Non-Anginal Pain,LV Hypertrophy,No,1
+Male,Asymptomatic,Normal,Yes,1
+Male,Asymptomatic,Normal,No,1
+Female,Asymptomatic,LV Hypertrophy,Yes,1
+Male,Asymptomatic,LV Hypertrophy,Yes,1
+Male,Typical Angina,LV Hypertrophy,No,0
+Female,Asymptomatic,LV Hypertrophy,Yes,1
+Female,Non-Anginal Pain,Normal,No,1
+Male,Atypical Angina,Normal,No,0
+Male,Non-Anginal Pain,LV Hypertrophy,No,0
+Female,Asymptomatic,Normal,No,0
+Male,Asymptomatic,LV Hypertrophy,Yes,1
+Male,Asymptomatic,LV Hypertrophy,No,1
+Male,Asymptomatic,LV Hypertrophy,Yes,1
+Female,Asymptomatic,LV Hypertrophy,No,1
+Male,Non-Anginal Pain,Normal,Yes,0
+Male,Asymptomatic,Normal,Yes,1
+Male,Typical Angina,LV Hypertrophy,No,1
+Female,Atypical Angina,LV Hypertrophy,No,0
+Female,Asymptomatic,LV Hypertrophy,Yes,1
+Male,Asymptomatic,Normal,Yes,1
+Male,Atypical Angina,Normal,No,0
+Female,Asymptomatic,Normal,No,0
+Male,Non-Anginal Pain,LV Hypertrophy,No,0
+Male,Non-Anginal Pain,Normal,Yes,0
+Male,Atypical Angina,LV Hypertrophy,No,0
+Male,Asymptomatic,LV Hypertrophy,Yes,0
+Female,Non-Anginal Pain,Normal,No,0
+Female,Atypical Angina,LV Hypertrophy,No,0
+Male,Asymptomatic,Normal,Yes,1
+Male,Atypical Angina,LV Hypertrophy,No,1
+Male,Asymptomatic,Normal,Yes,1
+Male,Non-Anginal Pain,LV Hypertrophy,No,0
+Male,Atypical Angina,Normal,Yes,0
+Male,Typical Angina,LV Hypertrophy,No,1
+Male,Atypical Angina,Normal,No,0
+Male,Non-Anginal Pain,Normal,Yes,1
+Male,Non-Anginal Pain,LV Hypertrophy,Yes,0
+Male,Non-Anginal Pain,Normal,No,1
+Male,Asymptomatic,LV Hypertrophy,No,1
+Male,Non-Anginal Pain,Normal,No,0
+Male,Atypical Angina,LV Hypertrophy,No,0
+Female,Non-Anginal Pain,Normal,No,0
+Male,Typical Angina,Normal,No,0
+Female,Asymptomatic,LV Hypertrophy,No,0
+Female,Non-Anginal Pain,LV Hypertrophy,No,0
+Male,Asymptomatic,LV Hypertrophy,Yes,1
+Male,Asymptomatic,LV Hypertrophy,Yes,1
+Male,Asymptomatic,LV Hypertrophy,No,1
+Male,Asymptomatic,Normal,Yes,1
+Male,Asymptomatic,LV Hypertrophy,No,1
+Male,Asymptomatic,LV Hypertrophy,No,1
+Male,Non-Anginal Pain,Normal,No,0
+Male,Atypical Angina,Normal,No,0
+Male,Asymptomatic,LV Hypertrophy,Yes,1
+Female,Non-Anginal Pain,Normal,No,0
+Female,Asymptomatic,LV Hypertrophy,No,0
+Male,Non-Anginal Pain,Normal,No,0
+Male,Asymptomatic,Normal,Yes,0
+Male,Non-Anginal Pain,Normal,No,0
+Female,Atypical Angina,LV Hypertrophy,Yes,0
+Male,Asymptomatic,LV Hypertrophy,Yes,1
+Female,Atypical Angina,Normal,No,0
+Male,Non-Anginal Pain,Normal,Yes,1
+Male,Asymptomatic,LV Hypertrophy,Yes,0
+Female,Asymptomatic,Normal,Yes,1
+Female,Asymptomatic,LV Hypertrophy,No,0
+Male,Asymptomatic,LV Hypertrophy,No,1
+Male,Asymptomatic,Normal,Yes,1
+Male,Asymptomatic,Normal,No,0
+Male,Asymptomatic,LV Hypertrophy,Yes,1
+Male,Non-Anginal Pain,Normal,No,0
+Male,Non-Anginal Pain,LV Hypertrophy,No,0
+Male,Asymptomatic,LV Hypertrophy,No,1
+Female,Asymptomatic,LV Hypertrophy,Yes,1
+Male,Typical Angina,LV Hypertrophy,No,0
+Male,Typical Angina,LV Hypertrophy,No,0
+Female,Asymptomatic,LV Hypertrophy,No,1
+Female,Atypical Angina,Normal,No,0
+Male,Non-Anginal Pain,Normal,No,0
+Male,Atypical Angina,Normal,Yes,1
+Male,Atypical Angina,LV Hypertrophy,No,1
+Male,Non-Anginal Pain,LV Hypertrophy,No,1
+Male,Non-Anginal Pain,Normal,No,0
+Male,Asymptomatic,Normal,Yes,1
+Male,Asymptomatic,LV Hypertrophy,Yes,1
+Female,Asymptomatic,Normal,No,1
+Female,Non-Anginal Pain,LV Hypertrophy,No,0
+Male,Asymptomatic,LV Hypertrophy,Yes,1
+Male,Typical Angina,LV Hypertrophy,No,0
+Female,Asymptomatic,LV Hypertrophy,Yes,0
+Female,Atypical Angina,Normal,No,0
+Male,Typical Angina,LV Hypertrophy,No,1
+Female,Asymptomatic,LV Hypertrophy,No,0
+Female,Asymptomatic,Normal,Yes,0
+Male,Non-Anginal Pain,Normal,No,0
+Female,Non-Anginal Pain,Normal,No,0
+Male,Asymptomatic,Normal,No,0
+Male,Asymptomatic,LV Hypertrophy,Yes,1
+Male,Asymptomatic,LV Hypertrophy,Yes,1
+Male,Asymptomatic,LV Hypertrophy,Yes,1
+Male,Atypical Angina,Normal,No,0
+Female,Asymptomatic,Normal,Yes,1
+Female,Non-Anginal Pain,Normal,No,0
+Male,Typical Angina,Normal,Yes,1
+Male,Non-Anginal Pain,LV Hypertrophy,No,0
+Female,Asymptomatic,Normal,Yes,1
+Male,Asymptomatic,Normal,No,1
+Male,Typical Angina,LV Hypertrophy,No,0
+Female,Atypical Angina,Normal,No,0
+Female,Asymptomatic,LV Hypertrophy,Yes,0
+Female,Asymptomatic,Normal,No,0
+Male,Asymptomatic,LV Hypertrophy,No,0
+Female,Non-Anginal Pain,LV Hypertrophy,Yes,0
+Female,Non-Anginal Pain,LV Hypertrophy,No,0
+Female,Non-Anginal Pain,Normal,No,0
+Male,Asymptomatic,Normal,Yes,1
+Female,Asymptomatic,Normal,Yes,1
+Female,Atypical Angina,Normal,No,0
+Male,Asymptomatic,Normal,No,0
+Female,Non-Anginal Pain,Normal,No,0
+Male,Asymptomatic,LV Hypertrophy,Yes,1
+Male,Asymptomatic,LV Hypertrophy,Yes,1
+Female,Non-Anginal Pain,LV Hypertrophy,No,0
+Female,Asymptomatic,ST-T Abnormality,Yes,1
+Male,Non-Anginal Pain,LV Hypertrophy,No,1
+Female,Atypical Angina,LV Hypertrophy,Yes,0
+Female,Non-Anginal Pain,Normal,No,0
+Male,Asymptomatic,LV Hypertrophy,Yes,1
+Male,Asymptomatic,LV Hypertrophy,Yes,1
+Male,Asymptomatic,LV Hypertrophy,No,1
+Female,Atypical Angina,Normal,No,0
+Male,Atypical Angina,Normal,No,0
+Male,Atypical Angina,Normal,No,0
+Female,Atypical Angina,Normal,No,0
+Female,Asymptomatic,Normal,No,0
+Male,Typical Angina,Normal,No,1
+Female,Non-Anginal Pain,Normal,No,0
+Male,Asymptomatic,Normal,No,1
+Male,Asymptomatic,Normal,No,1
+Male,Asymptomatic,LV Hypertrophy,Yes,1
+Male,Asymptomatic,Normal,No,1
+Male,Atypical Angina,LV Hypertrophy,No,0
+Male,Asymptomatic,Normal,Yes,0
+Male,Asymptomatic,Normal,No,1
+Male,Asymptomatic,Normal,Yes,0
+Female,Non-Anginal Pain,LV Hypertrophy,No,0
+Male,Asymptomatic,Normal,No,0
+Female,Non-Anginal Pain,Normal,No,0
+Female,Asymptomatic,Normal,No,0
+Female,Non-Anginal Pain,ST-T Abnormality,No,0
+Male,Atypical Angina,LV Hypertrophy,No,0
+Male,Atypical Angina,Normal,No,1
+Female,Non-Anginal Pain,Normal,No,0
+Female,Atypical Angina,LV Hypertrophy,No,1
+Female,Typical Angina,Normal,No,0
+Male,Non-Anginal Pain,Normal,No,0
+Male,Asymptomatic,LV Hypertrophy,Yes,1
+Male,Asymptomatic,Normal,Yes,1
+Male,Asymptomatic,Normal,Yes,1
+Male,Non-Anginal Pain,Normal,No,1
+Male,Asymptomatic,Normal,No,1
+Male,Non-Anginal Pain,Normal,No,0
+Male,Asymptomatic,LV Hypertrophy,Yes,1
+Male,Asymptomatic,LV Hypertrophy,No,0
+Male,Asymptomatic,Normal,Yes,1
+Female,Asymptomatic,Normal,No,0
+Male,Typical Angina,Normal,No,1
+Male,Typical Angina,LV Hypertrophy,No,0
+Female,Non-Anginal Pain,LV Hypertrophy,No,0
+Female,Non-Anginal Pain,Normal,No,0
+Male,Atypical Angina,LV Hypertrophy,No,1
+Female,Asymptomatic,Normal,No,0
+Male,Asymptomatic,Normal,Yes,1
+Male,Non-Anginal Pain,Normal,No,0
+Female,Asymptomatic,ST-T Abnormality,Yes,1
+Male,Atypical Angina,Normal,No,0
+Male,Asymptomatic,Normal,No,1
+Male,Asymptomatic,ST-T Abnormality,No,1
+Female,Asymptomatic,LV Hypertrophy,Yes,1
+Male,Atypical Angina,Normal,No,0
+Male,Atypical Angina,LV Hypertrophy,No,0
+Male,Atypical Angina,Normal,No,0
+Male,Non-Anginal Pain,LV Hypertrophy,No,1
+Female,Atypical Angina,Normal,No,0
+Male,Asymptomatic,Normal,Yes,1
+Male,Asymptomatic,LV Hypertrophy,Yes,1
+Female,Asymptomatic,Normal,Yes,1
+Male,Atypical Angina,Normal,No,0
+Male,Asymptomatic,LV Hypertrophy,No,1
+Female,Asymptomatic,Normal,Yes,1
+Male,Typical Angina,Normal,No,1
+Male,Asymptomatic,Normal,No,1
+Male,Asymptomatic,Normal,Yes,1
+Female,Atypical Angina,LV Hypertrophy,No,1
+Male,Non-Anginal Pain,Normal,No,0
